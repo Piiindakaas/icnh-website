@@ -41,7 +41,7 @@ img { display: block; max-width: 100%; }
 .s--accent .accent, .s--white .accent { color: var(--ink); }
 
 /* 01 Hero */
-.hero { min-height: 900px; gap: 48px; }
+.hero { min-height: 720px; gap: 48px; }
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -62,11 +62,16 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
   max-width: 17ch;
 }
+.statement__aside {
+  margin: 16px 0 0;
+  font-size: clamp(16px, 1.6vw, 22px);
+  color: var(--muted);
+}
 .hint { font-size: 14px; color: var(--muted); text-decoration: none; }
 .hint:hover { color: var(--white); }
 
 /* 02–04 Services */
-.service { min-height: 820px; gap: 64px; }
+.service { min-height: 560px; gap: 48px; }
 .title {
   margin: 0;
   font-family: var(--font-display);
@@ -82,7 +87,7 @@ img { display: block; max-width: 100%; }
 .body {
   margin: 0;
   align-self: flex-end;
-  max-width: 440px;
+  max-width: 640px;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -93,7 +98,7 @@ img { display: block; max-width: 100%; }
 /* 05 Portret */
 .portrait {
   position: relative;
-  min-height: 900px;
+  min-height: 760px;
   background: var(--photo);
   overflow: hidden;
   display: flex;
@@ -117,9 +122,10 @@ img { display: block; max-width: 100%; }
   line-height: 1.8;
   max-width: 460px;
 }
+.portrait__card p { margin: 0; }
 
 /* 06 Eerder gedaan */
-.track { min-height: 900px; gap: 48px; }
+.track { min-height: 760px; gap: 48px; }
 .track__title {
   margin: 0;
   font-family: var(--font-display);
@@ -143,17 +149,33 @@ img { display: block; max-width: 100%; }
   border-top: 1px solid var(--line);
 }
 .track__list li:last-child { border-bottom: 1px solid var(--line); }
+.track__list .talks { list-style: none; margin: 0; padding: 0; }
+.track__list .talks li {
+  display: block;
+  padding: 0 0 20px;
+  border: 0;
+}
+.track__list .talks li:last-child { padding-bottom: 0; border: 0; }
+.talks .bold { display: block; }
 
 /* 07 Bel me */
-.contact { min-height: 700px; gap: 48px; }
+.contact { min-height: 600px; gap: 48px; }
+.contact__head { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 8px 16px; }
+.contact__maybe { font-size: clamp(16px, 1.7vw, 24px); font-weight: 700; padding-bottom: 0.4em; }
+@media (min-width: 901px) {
+  .contact__head { flex-wrap: nowrap; gap: 8px; }
+  .contact__head > * { flex-shrink: 0; }
+}
 .contact__links {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-size: clamp(20px, 3vw, 36px);
+  font-size: clamp(16px, 3vw, 36px);
   font-weight: 700;
 }
 .contact__links a { text-decoration: none; }
+.contact__links { overflow-wrap: anywhere; }
+.contact__aside { font-size: 15px; font-weight: 400; }
 .contact__links a:hover { text-decoration: underline; }
 .footer {
   display: flex;
@@ -165,6 +187,13 @@ img { display: block; max-width: 100%; }
   border-top: 2px solid var(--ink);
   padding-top: 20px;
 }
+.footer__logo {
+  width: 220px;
+  height: auto;
+  aspect-ratio: 1783 / 110;
+  object-fit: cover;
+  object-position: top left;
+}
 
 /* Tablet en kleiner: portret en lijst onder elkaar */
 @media (max-width: 900px) {
@@ -175,7 +204,8 @@ img { display: block; max-width: 100%; }
 /* Telefoon */
 @media (max-width: 600px) {
   .hero { min-height: 100svh; }
-  .service { min-height: 560px; }
+  .service { min-height: 0; }
+  .service .title { font-size: 14vw; }
   .portrait { min-height: 640px; }
   .contact { min-height: 520px; }
   .track__list li { grid-template-columns: 1fr; gap: 4px; }
