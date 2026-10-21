@@ -187,13 +187,7 @@ img { display: block; max-width: 100%; }
   border-top: 2px solid var(--ink);
   padding-top: 20px;
 }
-.footer__logo {
-  width: 220px;
-  height: auto;
-  aspect-ratio: 1783 / 110;
-  object-fit: cover;
-  object-position: top left;
-}
+.footer__logo { width: 280px; height: auto; }
 
 /* Tablet en kleiner: portret en lijst onder elkaar */
 @media (max-width: 900px) {
