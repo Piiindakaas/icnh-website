@@ -92,6 +92,21 @@ img { display: block; max-width: 100%; }
   line-height: 1.6;
 }
 
+/* Desktop: header links, bodytekst ernaast */
+@media (min-width: 901px) {
+  .service {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 64px;
+    padding-top: calc(var(--pad) * 1.5);
+    padding-bottom: calc(var(--pad) * 1.5);
+  }
+  .service .title { font-size: clamp(56px, 7.5vw, 128px); }
+  .service .body { align-self: start; padding-top: 0.6em; }
+}
+
 /* 05 Portret + 06 Eerder gedaan: twee helften naast elkaar */
 .duo { display: grid; grid-template-columns: 1fr 1fr; }
 
@@ -162,6 +177,7 @@ img { display: block; max-width: 100%; }
 .contact { min-height: 600px; gap: 48px; }
 .contact__head { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 8px 16px; }
 .contact__maybe { font-size: clamp(16px, 1.7vw, 24px); font-weight: 700; padding-bottom: 0.4em; }
+.note { display: inline-block; width: 0.7em; height: 1.05em; vertical-align: -0.15em; }
 @media (min-width: 901px) {
   .contact__head { flex-wrap: nowrap; gap: 8px; }
   .contact__head > * { flex-shrink: 0; }
