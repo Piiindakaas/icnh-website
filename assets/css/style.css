@@ -196,7 +196,7 @@ img { display: block; max-width: 100%; }
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   gap: 16px;
   font-size: 13px;
@@ -206,6 +206,7 @@ img { display: block; max-width: 100%; }
 .footer__brand { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px 16px; }
 .footer__inch { height: 28px; width: auto; }
 .footer__logo { width: 280px; height: auto; }
+.footer > span:last-child { line-height: 1; }
 
 /* Tablet en kleiner: portret en lijst onder elkaar */
 @media (max-width: 900px) {
