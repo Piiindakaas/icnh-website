@@ -203,6 +203,8 @@ img { display: block; max-width: 100%; }
   border-top: 2px solid var(--ink);
   padding-top: 20px;
 }
+.footer__brand { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px 16px; }
+.footer__inch { height: 28px; width: auto; }
 .footer__logo { width: 280px; height: auto; }
 
 /* Tablet en kleiner: portret en lijst onder elkaar */
@@ -219,4 +221,6 @@ img { display: block; max-width: 100%; }
   .portrait { min-height: 640px; }
   .contact { min-height: 520px; }
   .track__list li { grid-template-columns: 1fr; gap: 4px; }
+  .footer__inch { height: 20px; }
+  .footer__logo { width: 200px; }
 }
