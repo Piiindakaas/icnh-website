@@ -125,7 +125,7 @@ img { display: block; max-width: 100%; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 20%;
+  object-position: 50% 0%;
 }
 .portrait__card {
   position: relative;
@@ -175,8 +175,8 @@ img { display: block; max-width: 100%; }
 
 /* 07 Bel me */
 .contact { min-height: 600px; gap: 48px; }
-.contact__head { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 8px 16px; }
-.contact__maybe { font-size: clamp(16px, 1.7vw, 24px); font-weight: 700; padding-bottom: 0.4em; }
+.contact__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 16px; }
+.contact__maybe { font-size: clamp(16px, 1.7vw, 24px); font-weight: 700; }
 .note { display: inline-block; width: 0.7em; height: 1.05em; vertical-align: -0.15em; }
 @media (min-width: 901px) {
   .contact__head { flex-wrap: nowrap; gap: 8px; }
