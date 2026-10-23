@@ -172,6 +172,8 @@ img { display: block; max-width: 100%; }
 }
 .track__list .talks li:last-child { padding-bottom: 0; border: 0; }
 .talks .bold { display: block; }
+.talks a { text-decoration: none; }
+.talks a:hover { color: var(--accent); }
 
 /* 07 Bel me */
 .contact { min-height: 600px; gap: 48px; }
