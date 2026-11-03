@@ -197,6 +197,10 @@ img { display: block; max-width: 100%; }
 .contact__row { display: flex; flex-wrap: wrap; gap: 8px clamp(32px, 5vw, 80px); }
 .contact__links a { text-decoration: none; }
 .contact__links { overflow-wrap: anywhere; }
+/* Mailadres (~19.6em breed) blijft op smalle telefoons op één regel */
+@media (max-width: 600px) {
+  .contact__links { font-size: min(18px, calc((100vw - 2 * var(--pad)) / 20)); }
+}
 .contact__aside { font-size: 15px; font-weight: 400; }
 .contact__links a:hover { text-decoration: underline; }
 .footer {
@@ -224,6 +228,14 @@ img { display: block; max-width: 100%; }
 /* Telefoon */
 @media (max-width: 600px) {
   .hero { min-height: 100svh; }
+  /* Mobiel: statement vult de breedte; EXPLAINING (langste woord) past precies */
+  .statement {
+    max-width: none;
+    font-size: calc((100vw - 2 * var(--pad)) * 0.148);
+    letter-spacing: -0.03em;
+    line-height: 0.93;
+  }
+  .statement__line { text-wrap: wrap; }
   .service { min-height: 0; }
   .service .title { font-size: 14vw; }
   .portrait { min-height: 640px; }
