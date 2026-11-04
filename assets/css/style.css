@@ -54,16 +54,16 @@ img { display: block; max-width: 100%; }
   margin: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(40px, 7vw, 112px);
+  /* Schaalt met de contentbreedte; WHAT THEY DO AND (~10.9em) vult de regel */
+  font-size: calc((100vw - 2 * var(--pad)) / 11.2);
   line-height: 0.95;
   letter-spacing: -0.025em;
   text-transform: uppercase;
-  max-width: 17ch;
 }
 .statement__line { display: block; text-wrap: balance; }
-/* Desktop: witte zin op twee regels */
+/* Desktop: vier regels; TERRIBLE AT EXPLAINING IT (~15.4em) vult de regel */
 @media (min-width: 901px) {
-  .statement { max-width: 18.5em; font-size: clamp(40px, 5vw, 112px); }
+  .statement { font-size: calc((100vw - 2 * var(--pad)) / 15.75); }
 }
 .statement__aside {
   margin: 16px 0 0;
