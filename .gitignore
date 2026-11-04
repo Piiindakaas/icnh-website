@@ -1,2 +1,6 @@
 .DS_Store
 _site/
+
+# Lokaal, privé: hoort niet in git
+CLAUDE.local.md
+.claude/

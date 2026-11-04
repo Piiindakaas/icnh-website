@@ -1,15 +1,40 @@
 <!doctype html>
+<!--
+
+                 _.====._
+               .'  ~~~~  '.
+              /  .-""""-.  \
+              | / _    _ \ |        Ah, someone who reads source code.
+              \|  o    o  |/        Respect.
+               |    <     |
+                \  \__/  /          Since you made it all the way here:
+             ___/'.____.'\___       I'm never gonna give you up.
+            /    \  ||  /    \
+           /  /\  \ ||_/  /\  \     INCH_ · communications for cyber
+          /  /  \  \||/  /  \  \
+          \  \   |  ==  |   /  /    (Call me. Maybe.)
+           \__\  |  ||  |  /__/
+                 |  ||  |
+                 |  ||  |
+                 |__||__|
+                (___)(___)
+
+-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>INCH_ · communications for cyber</title>
-<meta name="description" content="Communications for cyber. Content, campaigns, crisis comms and strategy, from hacker conference to boardroom.">
-<!-- Weghalen zodra de placeholders zijn ingevuld en de site live mag -->
-<meta name="robots" content="noindex">
+<meta name="description" content="Communications for cyber. Crisis communication, strategy and content. Specialised in translating hacker to board &amp; homo ordinarius.">
 <meta property="og:title" content="INCH_ · communications for cyber">
 <meta property="og:description" content="Cyber people are brilliant at what they do and terrible at explaining it (no offense).">
 <meta property="og:type" content="website">
+<!-- Absolute URL; moet mee als het domein verandert -->
+<meta property="og:image" content="https://insertcompanynamehere.nl/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="INCH_ · Comms for cyber">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,10 +51,9 @@
       <span class="accent">communications for cyber</span>
     </div>
     <div>
-      <h1 class="statement">Cyber people are brilliant at what they do and <span class="accent">terrible at explaining it</span></h1>
+      <h1 class="statement"><span class="statement__line">Cyber people are brilliant at what they do and</span> <span class="statement__line accent">terrible at explaining it</span></h1>
       <p class="statement__aside">(No offense)</p>
     </div>
-    <a class="hint" href="#contact">scroll, or just call me</a>
   </section>
 
   <!-- 02 Comms for cyber -->
@@ -50,37 +74,38 @@
     <p class="body">If you're not solving a problem, you're just keeping yourself busy. People have great ideas, but how do you position them? Have you thought about what your end user or client actually needs &amp; wants? Not you trying to sell your awesome idea. It's not about you, it's about them and people keep forgetting that. So that's where I come in.</p>
   </section>
 
-  <!-- 05 Portrait + 06 Been there (side by side) -->
   <div class="duo">
-  <!-- 05 Portrait -->
-  <section class="portrait">
-    <img class="portrait__img" src="assets/img/portret.jpg" alt="Portrait" loading="lazy">
-    <div class="portrait__card">
-      <div class="accent bold">THIS IS ME</div>
-      <p>Marieke, ADVERSIQ, DIVD Academy, available for interim, short gigs and extra hands when needed.</p>
-    </div>
-  </section>
 
-  <!-- 06 Been there -->
-  <section class="s s--ink track">
-    <h2 class="track__title">&lsquo;Track record&rsquo;</h2>
-    <ol class="track__list">
-      <li><span class="accent bold">ADVERSIQ</span><span>COO, co-founder. Things with risk management and supply chains. Also known as voice of reason</span></li>
-      <li><span class="accent bold">DIVD ACADEMY</span><span>Director</span></li>
-      <li><span class="accent bold">DIVD</span><span>Head of Communications, master of merch and events. Including crisiscomms</span></li>
-      <li><span class="accent bold">CCRC</span><span>Cybercrisistrainer</span></li>
-      <li><span class="accent bold">CYBER COMPANIES</span><span>Marketing &amp; comms</span></li>
-      <li><span class="accent bold">TALKS &amp; KEYNOTES</span>
-        <ul class="talks">
-          <li><a class="bold" href="https://www.allthecyberladies.nl/event/najaarsevent/" target="_blank" rel="noopener">25-11-2026 - Cyberladies Meetup</a>The human part of being hacked</li>
-          <li><a class="bold" href="https://goededoelennederland.nl/agenda/kennisfestival-2026" target="_blank" rel="noopener">18-11-2026 - Goede doelen kennisfestival</a>Struisvogels, goede doelen en informatiebeveiliging</li>
-          <li><a class="bold" href="https://one-conference.nl/session/divd-secures-the-internet-gets-hacked-with-0-days-and-ai/" target="_blank" rel="noopener">07-10-2026 - ONE Conference</a>DIVD secures the internet, gets hacked with 0-days and AI</li>
-          <li><a class="bold" href="https://securityinsight.nl/event/how-to-startup-a-tech-company-in-the-ai-slop-era-2026-09-10" target="_blank" rel="noopener">10-09-2026 - CyberSec Netherlands</a>How to startup a techcompany in the AI Slop era</li>
-          <li><a class="bold" href="https://pretalx.hackerhotel.nl/2025/talk/Z38YHU/" target="_blank" rel="noopener">16-02-2025 - HackerHotel</a>Hackersguide to the communications galaxy</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
+    <!-- 05 Portrait -->
+    <section class="portrait">
+      <img class="portrait__img" src="assets/img/portret.jpg" alt="Portrait" loading="lazy">
+      <div class="portrait__card">
+        <div class="accent bold">THIS IS ME</div>
+        <p>Marieke, ADVERSIQ, DIVD Academy, available for interim, short gigs and extra hands when needed.</p>
+      </div>
+    </section>
+
+    <!-- 06 Track record -->
+    <section class="s s--ink track">
+      <h2 class="track__title">&lsquo;Track record&rsquo;</h2>
+      <ol class="track__list">
+        <li><span class="accent bold">ADVERSIQ</span><span>COO, co-founder. Things with risk management and supply chains. Also known as voice of reason</span></li>
+        <li><span class="accent bold">DIVD ACADEMY</span><span>Director</span></li>
+        <li><span class="accent bold">DIVD</span><span>Head of Communications, master of merch and events. Including crisiscomms</span></li>
+        <li><span class="accent bold">CCRC</span><span>Cybercrisistrainer</span></li>
+        <li><span class="accent bold">CYBER COMPANIES</span><span>Marketing &amp; comms</span></li>
+        <li><span class="accent bold">TALKS &amp; KEYNOTES</span>
+          <ul class="talks">
+            <li><a class="bold" href="https://www.allthecyberladies.nl/event/najaarsevent/" target="_blank" rel="noopener">25-11-2026 - Cyberladies Meetup</a>The human part of being hacked</li>
+            <li><a class="bold" href="https://goededoelennederland.nl/agenda/kennisfestival-2026" target="_blank" rel="noopener">18-11-2026 - Goede doelen kennisfestival</a>Struisvogels, goede doelen en informatiebeveiliging</li>
+            <li><a class="bold" href="https://one-conference.nl/session/divd-secures-the-internet-gets-hacked-with-0-days-and-ai/" target="_blank" rel="noopener">07-10-2026 - ONE Conference</a>DIVD secures the internet, gets hacked with 0-days and AI</li>
+            <li><a class="bold" href="https://securityinsight.nl/event/how-to-startup-a-tech-company-in-the-ai-slop-era-2026-09-10" target="_blank" rel="noopener">10-09-2026 - CyberSec Netherlands</a>How to startup a techcompany in the AI Slop era</li>
+            <li><a class="bold" href="https://pretalx.hackerhotel.nl/2025/talk/Z38YHU/" target="_blank" rel="noopener">16-02-2025 - HackerHotel</a>Hackersguide to the communications galaxy</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
   </div>
 
   <!-- 07 Call me -->
@@ -90,16 +115,15 @@
       <span class="contact__maybe">Maybe. <svg class="note" viewBox="0 0 16 24" aria-hidden="true"><path d="M7 1v15.3A4.5 4.5 0 1 0 9 20V6.5c2.2.6 4 2 5 4.5 .6-4-1.6-7.6-7-10z" fill="currentColor"/></svg></span>
     </div>
     <div class="contact__links">
-      <a href="tel:+31615743854">+31615743854</a>
-      <a href="mailto:marieke@insertcompanynamehere.nl">marieke@insertcompanynamehere.nl</a>
-      <span class="contact__aside">also reachable on rick@rickastley.nl</span>
+      <div class="contact__row">
+        <a href="tel:+31615743854">+31615743854</a>
+        <a href="mailto:marieke@insertcompanynamehere.nl">marieke@insertcompanynamehere.nl</a>
+      </div>
+      <span class="contact__aside">also reachable on <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">rick@rickastley.nl</a></span>
     </div>
     <footer class="footer">
-      <span class="footer__brand">
-        <img class="footer__inch" src="assets/img/inch-logo-black.svg" alt="INCH_" width="647" height="164">
-        <img class="footer__logo" src="assets/img/insert-company-name-here-black.png" alt="insert company name here_" width="1537" height="99">
-      </span>
-      <span>Also known as stickerqueen, but don&rsquo;t tell anyone.</span>
+      <img class="footer__inch" src="assets/img/inch-logo-black.svg" alt="INCH_" width="647" height="164">
+      <img class="footer__logo" src="assets/img/insert-company-name-here-black.png" alt="insert company name here_" width="1537" height="99">
     </footer>
   </section>
 
