@@ -1,6 +1,6 @@
-# INCH_ website
+# ICNH_ website
 
-Statische one-pager voor INCH_, gehost op GitHub Pages.
+Statische one-pager voor ICNH_, gehost op GitHub Pages.
 
 - Content: `index.html`
 - Opmaak: `assets/css/style.css`

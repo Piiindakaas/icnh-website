@@ -1,6 +1,6 @@
-# INCH_ website
+# ICNH_ website
 
-Statische one-pager voor INCH_ (communicatie voor cyber), gehost op GitHub Pages.
+Statische one-pager voor ICNH_ (communicatie voor cyber), gehost op GitHub Pages.
 
 ## Privacy eerst
 

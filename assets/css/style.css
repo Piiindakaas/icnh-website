@@ -1,4 +1,4 @@
-/* INCH_ — design tokens */
+/* ICNH_ — design tokens */
 :root {
   --ink: #111111;
   --white: #ffffff;
@@ -205,7 +205,7 @@ img { display: block; max-width: 100%; }
   padding-top: 32px;
   margin-top: 24px;
 }
-.footer__inch { height: 28px; width: auto; }
+.footer__icnh { height: 28px; width: auto; }
 .footer__logo { width: 280px; height: auto; }
 
 /* Tablet en kleiner: portret en lijst onder elkaar */
@@ -232,6 +232,6 @@ img { display: block; max-width: 100%; }
   /* Mailadres (~19.6em breed) blijft op één regel */
   .contact__links { font-size: min(18px, calc((100vw - 2 * var(--pad)) / 20)); }
   .track__list li { grid-template-columns: 1fr; gap: 4px; }
-  .footer__inch { height: 20px; }
+  .footer__icnh { height: 20px; }
   .footer__logo { width: 200px; }
 }
